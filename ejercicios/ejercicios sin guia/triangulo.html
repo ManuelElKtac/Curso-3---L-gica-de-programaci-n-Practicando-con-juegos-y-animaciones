@@ -1,0 +1,32 @@
+<canvas width="600" height="400"> </canvas>
+
+<!--  width = ancho -->
+<!-- height = altura -->
+
+<script>
+    var pantalla = document.querySelector("canvas");
+    // var PANTALLA  va a recibir el cuadro que es VANVAS
+    var pincel = pantalla.getContext("2d");
+    // PINCEL va a ser el encargado de pintar CANVAS
+
+    pincel.fillStyle = "black"
+    pincel.beginPath();
+    pincel.moveTo(50, 50);
+    pincel.lineTo(50, 400);
+    pincel.lineTo(400, 400);
+    pincel.fill();
+
+    pincel.fillStyle = "white"
+    pincel.beginPath();
+    pincel.moveTo(100, 175);
+    pincel.lineTo(100, 350);
+    pincel.lineTo(275, 350);
+    pincel.fill();
+
+    // esta funcion fillRect (fill de llegar, rect de rectangulo)
+    //  y tiene 4 parametros: linea X; linea Y (plano carteciano)
+
+    // pocicion 0,0 y que avance en orizontal 600 y 400 en el eje verticals
+
+
+</script>

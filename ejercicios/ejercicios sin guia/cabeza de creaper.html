@@ -1,0 +1,38 @@
+<canvas width="600" height="400"> </canvas>
+
+<!--  width = ancho -->
+<!-- height = altura -->
+
+<script>
+    var pantalla = document.querySelector("canvas");
+    // var PANTALLA  va a recibir el cuadro que es VANVAS
+    var pincel = pantalla.getContext("2d");
+    // PINCEL va a ser el encargado de pintar CANVAS
+
+    pincel.fillStyle = "darkgreen" // propiedad
+    // fillStyle es una propiedad o caracteristica, por eso debemos pasarle un valor
+    pincel.fillRect(150, 50, 350, 300) // funcion
+
+    // esta funcion fillRect (fill de llegar, rect de rectangulo)
+    //  y tiene 4 parametros: linea X; linea Y (plano carteciano)
+
+    // pocicion 0,0 y que avance en orizontal 600 y 400 en el eje verticals
+
+    pincel.fillStyle = "black" // propiedad
+    pincel.fillRect(195, 110, 90, 90) // funcion
+
+    pincel.fillStyle = "black" // propiedad
+    pincel.fillRect(355, 110, 90, 90) // funcion
+
+    // se puede comentar asi:
+    /* anjfja hola hola hola
+    */
+    pincel.fillStyle = "black" // propiedad
+    pincel.fillRect(285, 200, 70, 100) // funcion
+
+    pincel.fillStyle = "black" // propiedad
+    pincel.fillRect(245, 240, 40, 110) // funcion
+
+    pincel.fillStyle = "black" // propiedad
+    pincel.fillRect(355, 240, 40, 110) // funcion
+</script>
