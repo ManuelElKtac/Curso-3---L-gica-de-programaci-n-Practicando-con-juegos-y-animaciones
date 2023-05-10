@@ -1,0 +1,66 @@
+<canvas width="600" height="400"> </canvas>
+
+<!--  width = ancho -->
+<!-- height = altura -->
+
+<script>
+
+    /*
+    
+        function dibujarCuadradooVerde(x, y) {
+    
+            var pantalla = document.querySelector("canvas");
+            // var PANTALLA  va a recibir el cuadro que es VANVAS
+            var pincel = pantalla.getContext("2d");
+            // PINCEL va a ser el encargado de pintar CANVAS
+    
+            pincel.fillStyle = "green"; // propiedad
+            // fillStyle es una propiedad o caracteristica, por eso debemos pasarle un valor
+            pincel.fillRect(x, y, 50, 50); // funcion
+    
+            /* anjfja hola hola hola
+            
+            pincel.strokeStyle = "balck";
+            pincel.strokeRect(x, y, 50, 50);
+            // se usan para hacer un borde
+        }
+    */
+
+    function dibujarCuadradoVerde(x, y) {
+
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+        pincel.fillStyle = "green";
+        pincel.fillRect(x, y, 50, 50);
+        pincel.strokeStyle = "balck";
+        pincel.strokeRect(x, y, 50, 50);
+    }
+
+
+
+    function dibujarCuadradoAmarillo(x, y) {
+
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+        pincel.fillStyle = "yellow";
+        pincel.fillRect(x, y, 50, 50);
+        pincel.strokeStyle = "balck";
+        pincel.strokeRect(x, y, 50, 50);
+    }
+
+
+    function dibujarCuadradoRojo(x, y) {
+
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+        pincel.fillStyle = "red";
+        pincel.fillRect(x, y, 50, 50);
+        pincel.strokeStyle = "balck";
+        pincel.strokeRect(x, y, 50, 50);
+    }
+
+    dibujarCuadradoVerde(0, 0);
+    dibujarCuadradoAmarillo(0, 50);
+    dibujarCuadradoRojo(0, 100);
+
+</script>
