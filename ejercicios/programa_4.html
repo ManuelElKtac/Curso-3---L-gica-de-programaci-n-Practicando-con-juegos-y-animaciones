@@ -1,0 +1,52 @@
+<canvas width="600" height="400"> </canvas>
+<!--  width = ancho -->
+<!-- height = altura -->
+<script>
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+    pincel.fillStyle = "lightgrey";
+    pincel.fillRect(0, 0, 600, 400);
+
+    function disenharCircunferencia(x, y, radio) {
+        pincel.fillStyle = "blue";
+        pincel.beginPath();
+        pincel.arc(x, y, radio, 0, 2 * Math.PI) //3.14 (pi) = Match.PI
+        pincel.fill();
+    }
+
+    function limpiarPantalla() {
+
+        pincel.clearRect(0, 0, 600, 400);
+
+    }
+
+    var x = 0
+
+    function actualizarPantalla() {
+        limpiarPantalla();
+        disenharCircunferencia(x, 20, 10);
+        x++;
+    }
+
+    setInterval(actualizarPantalla, 10);
+
+
+
+
+
+
+
+
+    //pantalla.onclick = exibirAlerta;
+
+    /*
+        var x = 0;
+        while (x < 600) {
+            dibujarCuadrado(x, 0, "green");
+            dibujarCuadrado(x, 50, "yellow");
+            dibujarCuadrado(x, 100, "red");
+    
+            x = x + 50;
+        }
+    */
+</script>
